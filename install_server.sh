@@ -7,7 +7,7 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-a
 sudo apt update -y
 sudo apt upgrade -y
 
-sudo apt install ros-humble-ros-base
+sudo apt install ros-humble-ros-base python3-colcon-common-extensions
 sudo apt install python3-colcon-common-extensions
 
 grep "source /opt/ros/humble/setup.bash" ~/.bashrc
