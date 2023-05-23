@@ -7,7 +7,7 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-a
 sudo apt update -y
 sudo apt upgrade -y
 
-sudo apt install ros-humble-desktop
+sudo apt install ros-humble-desktop python3-colcon-common-extensions
 sudo apt -y install gazebo
 sudo apt install ros-humble-gazebo-*
 
