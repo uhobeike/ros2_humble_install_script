@@ -17,3 +17,10 @@ if [ $? = 0 ]; then
 else
   echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 fi
+
+grep "export ROS_DOMAIN_ID" ~/.bashrc
+if [ $? = 0 ]; then
+  :
+else
+  echo "export ROS_DOMAIN_ID=1" >> ~/.bashrc
+fi
