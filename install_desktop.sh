@@ -11,7 +11,7 @@ sudo apt install -y ros-humble-desktop python3-colcon-common-extensions python3-
 sudo apt -y install gazebo
 sudo apt install -y ros-humble-gazebo-*
 
-echo -e "\n## Execute $0 $(date +'%Y/%m/%d %H:%M:%S')"  >> ~/.bashrc
+echo -e "\n## Execute ${BASH_SOURCE[0]} $(date +'%Y/%m/%d %H:%M:%S')"  >> ~/.bashrc
 
 grep "source /opt/ros/humble/setup.bash" ~/.bashrc
 if [ $? = 0 ]; then
